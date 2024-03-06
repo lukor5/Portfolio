@@ -57,51 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-const form = document.querySelector('.contact-form');
-form.addEventListener('submit', async (e) => {
-    e.preventDefault(); // Prevent the default form submission
 
-    const popup = document.getElementById("success-popup");
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('mail').value;
-    const message = document.getElementById('message').value;
-
-    if (!name || !email || !message) {
-        alert('Please fill in all fields.');
-        return;
-    }
-
-    if (!validateEmail(email)) {
-        alert('Please enter a valid email address.');
-        return;
-    }
-
-    const formData = {
-        name,
-        email,
-        message,
-    };
-
-    console.log('formdata:', formData);
-
-    try {
-        const response = await axios.post('/api/submit', formData, {
-            headers: {
-                'Content-Type': 'application/json',
-            },
-        });
-
-        console.log('Form data submitted successfully.');
-        popup.style.display = "block";
-
-        setTimeout(function () {
-            popup.style.display = "none";
-        }, 3000);
-        form.reset();
-    } catch (error) {
-        console.error('Error submitting form data:', error);
-    }
-});
 
 function validateEmail(email) {
     const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
