@@ -98,22 +98,113 @@ https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css
     <section id="projects">
         <h1 style="border-bottom: 1px solid gainsboro; margin-inline: 10%; padding: 10px">My Projects</h1>
         <div id="projectsContainer">
-            <div class="single-project">
+            <div class="single-project" style="background-image: url(../images/weatherapp.png);">
                 <div class="details">
                     <div class="buttons">
-                        <a href=""><i class="bi bi-git"></i></a>
-                        <a href=""><i class="bi bi-search"></i></a>
+                        <a href="https://github.com/lukor5/Weather-app"><i class="bi bi-git"></i></a>
+                        <a href="https://lukor5.github.io/Weather-app/"><i class="bi bi-search"></i></a>
                     </div>
-                    <div class="projectName"><h1>RPG Sheets</h1></div>
+                    <div class="projectName">
+                        <h1>Weather App</h1>
+                    </div>
                     <ul>
                         <li>
-                            <p>Python</p>
+                            JavaScript
+                        </li>
+                        <li>
+                            HTML
+                        </li>
+                        <li>
+                            CSS
+                        </li>
+                        <li>
+                            REST
+                        </li>
+                        <li>
+                            Vue.js
                         </li>
                     </ul>
-                    </div>
-                    </div>
                 </div>
             </div>
+            <div class="single-project" style="background-image: url(../images/tasks.png);">
+                <div class="details">
+                    <div class="buttons">
+                        <a href="https://github.com/lukor5/manage-tasks"><i class="bi bi-git"></i></a>
+                        <a href="https://manage-tasks-lhqr.onrender.com/"><i class="bi bi-search"></i></a>
+                    </div>
+                    <div class="projectName">
+                        <h1>Task Manager</h1>
+                    </div>
+                    <ul>
+                        <li>
+                            HTML
+                        </li>
+                        <li>
+                            CSS
+                        </li>
+                        <li>
+                            Vue.js
+                        </li>
+                        <li>
+                            Firebase
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="single-project" style="background-image: url(../images/calc.png);">
+                <div class="details">
+                    <div class="buttons">
+                        <a href="https://github.com/lukor5/Calculator"><i class="bi bi-git"></i></a>
+                        <a href="https://calc-33j8.onrender.com/"><i class="bi bi-search"></i></a>
+                    </div>
+                    <div class="projectName">
+                        <h1>Calculator</h1>
+                    </div>
+                    <ul>
+                        <li>
+                            JavaScript
+                        </li>
+                        <li>
+                            HTML
+                        </li>
+                        <li>
+                            CSS
+                        </li>
+                        <li>
+                            Grid
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="single-project" style="background-image: url(../images/rpgcharactersheets.png);">
+                <div class="details">
+                    <div class="buttons">
+                        <a href="https://github.com/lukor5/RpgCharacterSheets"><i class="bi bi-git"></i></a>
+                        <a href="https://rpgcharactersheets.onrender.com/"><i class="bi bi-search"></i></a>
+                    </div>
+                    <div class="projectName">
+                        <h1>RPG Sheets</h1>
+                    </div>
+                    <ul>
+
+                        <li>
+                            Python
+                        </li>
+                        <li>
+                         Django
+                        </li>
+                        <li>
+                        CRUD
+                        </li>
+                        <li>
+                        Grid
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
         </div>
     </section>
 
@@ -122,13 +213,13 @@ https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css
             <p>Message sent succesfully!</p>
         </div>
         <div class="form-container">
-            <form class="contact-form" action="send_message.php" method="post">
+            <form class="contact-form">
                 <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Your name...">
+                <input type="text" id="name" name="name" placeholder="Your name...">
                 <label for="mail">E-mail</label>
-                <input type="text" id="mail" placeholder="Your E-mail address...">
+                <input type="text" id="mail" name="email" placeholder="Your E-mail address...">
                 <label for="message">Message</label>
-                <textarea type="text" id="message" placeholder="Your message..."></textarea>
+                <textarea id="message" name="message" placeholder="Your message..."></textarea>
                 <button type="submit" id="submitBtn">Send</button>
             </form>
         </div>
